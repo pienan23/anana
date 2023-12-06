@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TD1.css">
+
+</head>
+<body>
+    <div class="container">
+        <button class="open-btn">Votre ananas</button>
+    </div>
+     
+    <div class="ananas-box">
+        <span class="close-btn">&times;</span>
+        <img src="image td/ananas1.jpg" alt="ananas">
+        <h3>Ananas et privacy</h3>
+        <p>This website use ananas to ensure you to get  the best experience on our website</p>
+        <a href="#" class="accept"> accept all ananas </a>
+        <a href="#" class="stteing"> accept all setting </a>
+    </div>
+
+   
+
+
+    <script>
+
+        document.querySelector('.open-btn').onclick = () =>{
+            document.querySelector('.ananas-box').classList.add('active');
+        }
+
+        document.querySelector('.close-btn').onclick = () =>{
+            document.querySelector('.ananas-box').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
